@@ -1,318 +1,505 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anusha N | DevOps Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anusha N | DevOps Engineer</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        body{
-            background:#0f172a;
-            color:#fff;
-            line-height:1.6;
-        }
+<style>
 
-        a{
-            text-decoration:none;
-            color:inherit;
-        }
+html{
+scroll-behavior:smooth;
+}
 
-        .container{
-            width:90%;
-            max-width:1200px;
-            margin:auto;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
 
-        /* Header */
-        header{
-            background:#111827;
-            position:sticky;
-            top:0;
-            z-index:1000;
-            box-shadow:0 2px 10px rgba(0,0,0,0.3);
-        }
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
 
-        nav{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:18px 0;
-        }
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
 
-        .logo{
-            font-size:1.5rem;
-            font-weight:bold;
-            color:#38bdf8;
-        }
+header{
+background:#111827;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
 
-        .nav-links{
-            display:flex;
-            gap:25px;
-        }
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
 
-        .nav-links a:hover{
-            color:#38bdf8;
-        }
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
 
-        /* Hero Section */
-        .hero{
-            min-height:90vh;
-            display:flex;
-            align-items:center;
-            text-align:center;
-        }
+.nav-links{
+display:flex;
+gap:25px;
+}
 
-        .hero-content{
-            width:100%;
-        }
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
 
-        .hero h1{
-            font-size:3rem;
-            margin-bottom:10px;
-        }
+.nav-links a:hover{
+color:#38bdf8;
+}
 
-        .hero h2{
-            color:#38bdf8;
-            margin-bottom:20px;
-            font-size:1.8rem;
-        }
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
 
-        .hero p{
-            max-width:700px;
-            margin:0 auto 30px;
-            color:#cbd5e1;
-        }
+.profile-pic{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+margin-bottom:20px;
+box-shadow:0 0 30px rgba(56,189,248,.5);
+}
 
-        .btn{
-            display:inline-block;
-            background:#38bdf8;
-            color:#0f172a;
-            padding:12px 25px;
-            border-radius:8px;
-            font-weight:bold;
-            transition:0.3s;
-        }
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
 
-        .btn:hover{
-            background:#0ea5e9;
-        }
+.hero h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
 
-        section{
-            padding:80px 0;
-        }
+.hero p{
+max-width:700px;
+margin:auto;
+color:#cbd5e1;
+}
 
-        .section-title{
-            text-align:center;
-            font-size:2rem;
-            margin-bottom:40px;
-            color:#38bdf8;
-        }
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+background:#38bdf8;
+color:#0f172a;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+margin-right:10px;
+}
 
-        /* About */
-        .about{
-            text-align:center;
-        }
+.resume-btn{
+display:inline-block;
+padding:12px 25px;
+background:#22c55e;
+color:white;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+}
 
-        .about p{
-            max-width:850px;
-            margin:auto;
-            color:#cbd5e1;
-        }
+section{
+padding:80px 0;
+}
 
-        /* Skills */
-        .skills-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-            gap:20px;
-        }
+.section-title{
+text-align:center;
+font-size:2.2rem;
+margin-bottom:40px;
+color:#38bdf8;
+}
 
-        .skill-card{
-            background:#1e293b;
-            padding:20px;
-            border-radius:10px;
-            text-align:center;
-            transition:0.3s;
-        }
+.about p{
+max-width:900px;
+margin:auto;
+text-align:center;
+color:#cbd5e1;
+}
 
-        .skill-card:hover{
-            transform:translateY(-5px);
-            background:#334155;
-        }
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
 
-        /* Projects */
-        .projects-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-            gap:25px;
-        }
+.skill-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+transition:.3s;
+}
 
-        .project-card{
-            background:#1e293b;
-            padding:25px;
-            border-radius:12px;
-        }
+.skill-card:hover{
+transform:translateY(-5px);
+background:#334155;
+}
 
-        .project-card h3{
-            color:#38bdf8;
-            margin-bottom:10px;
-        }
+.projects-grid,
+.cert-grid,
+.exp-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
 
-        .project-card p{
-            color:#cbd5e1;
-        }
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+}
 
-        /* Contact */
-        .contact{
-            text-align:center;
-        }
+.card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
 
-        .contact p{
-            margin:10px 0;
-            color:#cbd5e1;
-        }
+.card p{
+color:#cbd5e1;
+}
 
-        footer{
-            text-align:center;
-            padding:20px;
-            background:#111827;
-            color:#94a3b8;
-        }
+.contact{
+text-align:center;
+}
 
-        @media(max-width:768px){
-            .hero h1{
-                font-size:2.2rem;
-            }
+.contact p{
+margin:10px 0;
+}
 
-            .hero h2{
-                font-size:1.3rem;
-            }
+.social-icons{
+margin-top:20px;
+}
 
-            .nav-links{
-                gap:15px;
-                font-size:14px;
-            }
-        }
-    </style>
+.social-icons a{
+font-size:35px;
+margin:0 15px;
+color:#38bdf8;
+}
+
+.social-icons a:hover{
+color:white;
+}
+
+footer{
+background:#111827;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.nav-links{
+gap:12px;
+font-size:14px;
+}
+
+.profile-pic{
+width:140px;
+height:140px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <div class="container">
-        <nav>
-            <div class="logo">Anusha N</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </div>
+<div class="container">
+<nav>
+<div class="logo">Anusha N</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+</div>
 </header>
 
 <section class="hero">
-    <div class="container hero-content">
-        <h1>Hello, I'm Anusha N</h1>
-        <h2>DevOps Engineer</h2>
-        <p>
-            Passionate about Cloud Computing, AWS, CI/CD Automation,
-            Infrastructure Management, and building scalable solutions.
-            I enjoy optimizing deployments, improving reliability,
-            and automating workflows.
-        </p>
-        <a href="#contact" class="btn">Contact Me</a>
-    </div>
+
+<div class="container">
+
+<img src="profile.jpg" alt="Anusha N" class="profile-pic">
+
+<h1>Hello, I'm Anusha N</h1>
+
+<h2>DevOps Engineer</h2>
+
+<p>
+DevOps Engineer with 2.5+ years of experience in AWS, Azure,
+Docker, Kubernetes, Terraform, Jenkins, CI/CD Automation,
+Linux Administration, Cloudflare, Python and Bash Scripting.
+Passionate about building scalable cloud infrastructure and
+automating deployment pipelines.
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+<a href="Anusha_Resume.pdf" class="resume-btn" download>
+Download Resume
+</a>
+
+</div>
+
 </section>
 
 <section id="about">
-    <div class="container about">
-        <h2 class="section-title">About Me</h2>
-        <p>
-            I am a DevOps Engineer with experience in AWS, Linux,
-            DNS Management, CI/CD pipelines, and cloud infrastructure.
-            I enjoy solving technical challenges, automating processes,
-            and ensuring reliable and secure deployments. My goal is
-            to create efficient and scalable systems that help businesses
-            grow and operate smoothly.
-        </p>
-    </div>
+
+<div class="container about">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+DevOps Engineer with strong expertise in cloud platforms,
+CI/CD pipelines, infrastructure automation, containerization,
+monitoring, DNS management, SSL/TLS implementation, and
+production support. Experienced in AWS, Azure, Docker,
+Kubernetes, Terraform, Jenkins, Cloudflare, Python, and Bash.
+Dedicated to improving deployment efficiency, system reliability,
+and operational excellence.
+</p>
+
+</div>
+
 </section>
 
 <section id="skills">
-    <div class="container">
-        <h2 class="section-title">Skills</h2>
 
-        <div class="skills-grid">
-            <div class="skill-card">AWS</div>
-            <div class="skill-card">Linux</div>
-            <div class="skill-card">Docker</div>
-            <div class="skill-card">Kubernetes</div>
-            <div class="skill-card">Jenkins</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">CI/CD</div>
-            <div class="skill-card">DNS Management</div>
-            <div class="skill-card">Terraform</div>
-            <div class="skill-card">Monitoring</div>
-        </div>
-    </div>
+<div class="container">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">AWS</div>
+<div class="skill-card">Microsoft Azure</div>
+<div class="skill-card">Docker</div>
+<div class="skill-card">Kubernetes</div>
+<div class="skill-card">Terraform</div>
+<div class="skill-card">Jenkins</div>
+<div class="skill-card">Azure DevOps</div>
+<div class="skill-card">GitHub</div>
+<div class="skill-card">GitLab</div>
+<div class="skill-card">Linux</div>
+<div class="skill-card">Python</div>
+<div class="skill-card">Bash</div>
+<div class="skill-card">Cloudflare</div>
+<div class="skill-card">Datadog</div>
+<div class="skill-card">Dynatrace</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<div class="container">
+
+<h2 class="section-title">Work Experience</h2>
+
+<div class="exp-grid">
+
+<div class="card">
+<h3>EITB Global Info Solutions Pvt Ltd</h3>
+<p>
+DevOps Engineer | Mar 2025 - Present
+<br><br>
+Managing Azure production infrastructure, CI/CD pipelines,
+Linux administration, Cloudflare, DNS, SSL/TLS,
+hosting platforms, backups, monitoring, and incident management.
+</p>
+</div>
+
+<div class="card">
+<h3>Texiio Global Private Limited</h3>
+<p>
+DevOps Engineer | Oct 2022 - Mar 2025
+<br><br>
+Managed AWS & Azure infrastructure, Terraform deployments,
+Docker, Kubernetes, Jenkins pipelines, monitoring solutions,
+and cloud automation using Python and AWS Lambda.
+</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <section id="projects">
-    <div class="container">
-        <h2 class="section-title">Projects</h2>
 
-        <div class="projects-grid">
+<div class="container">
 
-            <div class="project-card">
-                <h3>AWS Static Website Hosting</h3>
-                <p>
-                    Hosted a static website using AWS S3 and Route 53.
-                    Configured DNS records and ensured reliable website access.
-                </p>
-            </div>
+<h2 class="section-title">Projects</h2>
 
-            <div class="project-card">
-                <h3>CI/CD Pipeline Automation</h3>
-                <p>
-                    Implemented automated deployment pipelines using Jenkins,
-                    Git, and AWS services to streamline application delivery.
-                </p>
-            </div>
+<div class="projects-grid">
 
-            <div class="project-card">
-                <h3>DNS Migration Project</h3>
-                <p>
-                    Managed DNS migration and domain configurations while
-                    minimizing downtime and ensuring service continuity.
-                </p>
-            </div>
+<div class="card">
+<h3>CI/CD Pipeline Automation</h3>
+<p>
+Designed and implemented automated deployment pipelines using Jenkins and Azure DevOps.
+</p>
+</div>
 
-        </div>
-    </div>
+<div class="card">
+<h3>Kubernetes Deployment Platform</h3>
+<p>
+Managed production Kubernetes clusters with rolling updates and scaling.
+</p>
+</div>
+
+<div class="card">
+<h3>Terraform Infrastructure</h3>
+<p>
+Provisioned cloud infrastructure using Infrastructure as Code principles.
+</p>
+</div>
+
+<div class="card">
+<h3>Cloudflare & DNS Management</h3>
+<p>
+Managed DNS, SSL/TLS, CDN, and website security for production applications.
+</p>
+</div>
+
+<div class="card">
+<h3>AWS Lambda Automation</h3>
+<p>
+Automated EC2 scheduling and cloud operations using Python and AWS services.
+</p>
+</div>
+
+<div class="card">
+<h3>Monitoring & Incident Response</h3>
+<p>
+Implemented monitoring solutions using Datadog, Dynatrace, and CloudWatch.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<div class="container">
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="cert-grid">
+
+<div class="card">
+<h3>AZ-400</h3>
+<p>Designing and Implementing Microsoft DevOps Solutions</p>
+</div>
+
+<div class="card">
+<h3>AZ-104</h3>
+<p>Microsoft Azure Administrator</p>
+</div>
+
+<div class="card">
+<h3>Jenkins</h3>
+<p>KodeKloud Certification</p>
+</div>
+
+<div class="card">
+<h3>Docker</h3>
+<p>Docker for Absolute Beginners</p>
+</div>
+
+<div class="card">
+<h3>Terraform</h3>
+<p>Terraform Basics Training</p>
+</div>
+
+<div class="card">
+<h3>Git & Shell Scripting</h3>
+<p>KodeKloud Training</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <section id="contact">
-    <div class="container contact">
-        <h2 class="section-title">Contact</h2>
 
-        <p><strong>Name:</strong> Anusha N</p>
-        <p><strong>Role:</strong> DevOps Engineer</p>
-        <p><strong>Email:</strong> your-email@example.com</p>
-        <p><strong>LinkedIn:</strong> linkedin.com/in/your-profile</p>
-        <p><strong>GitHub:</strong> github.com/your-username</p>
-    </div>
+<div class="container contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<p>📧 anushakn041@gmail.com</p>
+<p>📱 +91 7892270344</p>
+<p>📍 Chennai, India</p>
+
+<div class="social-icons">
+
+<a href="https://www.linkedin.com/in/anusha-n02" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://github.com/Anushanarayanaswamy" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+</div>
+
+</div>
+
 </section>
 
 <footer>
-    <p>© 2026 Anusha N | DevOps Engineer. All Rights Reserved.</p>
+<p>© 2026 Anusha N | DevOps Engineer</p>
 </footer>
 
 </body>
 </html>
+```
