@@ -1,369 +1,117 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anusha N | DevOps Engineer</title>
+<title>Anusha | DevOps Engineer</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-html{
-scroll-behavior:smooth;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-}
-
-body{
-background:#0f172a;
-color:white;
-line-height:1.6;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-header{
-background:#111827;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.4);
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 0;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#38bdf8;
-}
-
-.nav-links{
-display:flex;
-gap:25px;
-}
-
-.nav-links a{
-text-decoration:none;
-color:white;
-font-weight:500;
-}
-
-.nav-links a:hover{
-color:#38bdf8;
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-}
-
-.profile-pic{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid #38bdf8;
-margin-bottom:20px;
-box-shadow:0 0 30px rgba(56,189,248,.5);
-}
-
-.hero h1{
-font-size:3rem;
-margin-bottom:10px;
-}
-
-.hero h2{
-color:#38bdf8;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:700px;
-margin:auto;
-color:#cbd5e1;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 25px;
-background:#38bdf8;
-color:#0f172a;
-font-weight:bold;
-text-decoration:none;
-border-radius:8px;
-margin-right:10px;
-}
-
-.resume-btn{
-display:inline-block;
-padding:12px 25px;
-background:#22c55e;
-color:white;
-font-weight:bold;
-text-decoration:none;
-border-radius:8px;
-}
-
-section{
-padding:80px 0;
-}
-
-.section-title{
-text-align:center;
-font-size:2.2rem;
-margin-bottom:40px;
-color:#38bdf8;
-}
-
-.about p{
-max-width:900px;
-margin:auto;
-text-align:center;
-color:#cbd5e1;
-}
-
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-}
-
-.skill-card{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-text-align:center;
-font-weight:bold;
-transition:.3s;
-}
-
-.skill-card:hover{
-transform:translateY(-5px);
-background:#334155;
-}
-
-.projects-grid,
-.cert-grid,
-.exp-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-}
-
-.card h3{
-color:#38bdf8;
-margin-bottom:10px;
-}
-
-.card p{
-color:#cbd5e1;
-}
-
-.contact{
-text-align:center;
-}
-
-.contact p{
-margin:10px 0;
-}
-
-.social-icons{
-margin-top:20px;
-}
-
-.social-icons a{
-font-size:35px;
-margin:0 15px;
-color:#38bdf8;
-}
-
-.social-icons a:hover{
-color:white;
-}
-
-footer{
-background:#111827;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2.2rem;
-}
-
-.nav-links{
-gap:12px;
-font-size:14px;
-}
-
-.profile-pic{
-width:140px;
-height:140px;
-}
-
-}
-
-</style>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
 
 <header>
-<div class="container">
 <nav>
-<div class="logo">Anusha N</div>
+<h2>Anusha</h2>
 
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
-</div>
-
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
-</div>
 </header>
 
 <section class="hero">
+<div class="hero-content">
 
-<div class="container">
+<h1>Hello, I'm <span>Anusha</span></h1>
 
-<img src="profile.jpg" alt="Anusha N" class="profile-pic">
-
-<h1>Hello, I'm Anusha N</h1>
-
-<h2>DevOps Engineer</h2>
+<h3><span class="typing"></span></h3>
 
 <p>
 DevOps Engineer with 2.5+ years of experience in AWS, Azure,
-Docker, Kubernetes, Terraform, Jenkins, CI/CD Automation,
-Linux Administration, Cloudflare, Python and Bash Scripting.
-Passionate about building scalable cloud infrastructure and
-automating deployment pipelines.
+Terraform, Kubernetes, CI/CD, Automation and Production Support.
 </p>
 
-<a href="#contact" class="btn">Contact Me</a>
-
-<a href="Anusha_Resume.pdf" class="resume-btn" download>
-Download Resume
-</a>
+<a href="#contact" class="btn">Hire Me</a>
 
 </div>
-
 </section>
 
 <section id="about">
+<h2>About Me</h2>
 
-<div class="container about">
-
-<h2 class="section-title">About Me</h2>
-
+<div class="card">
 <p>
-DevOps Engineer with strong expertise in cloud platforms,
-CI/CD pipelines, infrastructure automation, containerization,
-monitoring, DNS management, SSL/TLS implementation, and
-production support. Experienced in AWS, Azure, Docker,
-Kubernetes, Terraform, Jenkins, Cloudflare, Python, and Bash.
-Dedicated to improving deployment efficiency, system reliability,
-and operational excellence.
+DevOps Engineer experienced in designing scalable cloud
+infrastructure across AWS and Azure.
+
+Expertise includes Terraform, Docker, Kubernetes, Azure DevOps,
+Jenkins, Python Automation, Monitoring, Cloudflare and Production
+Operations.
+
+Passionate about automation, reliability engineering and
+cloud-native technologies.
 </p>
-
 </div>
-
 </section>
 
 <section id="skills">
-
-<div class="container">
-
-<h2 class="section-title">Technical Skills</h2>
+<h2>Technical Skills</h2>
 
 <div class="skills-grid">
 
 <div class="skill-card">AWS</div>
-<div class="skill-card">Microsoft Azure</div>
+<div class="skill-card">Azure</div>
+<div class="skill-card">Terraform</div>
 <div class="skill-card">Docker</div>
 <div class="skill-card">Kubernetes</div>
-<div class="skill-card">Terraform</div>
-<div class="skill-card">Jenkins</div>
 <div class="skill-card">Azure DevOps</div>
-<div class="skill-card">GitHub</div>
-<div class="skill-card">GitLab</div>
-<div class="skill-card">Linux</div>
+<div class="skill-card">Jenkins</div>
+<div class="skill-card">GitLab CI/CD</div>
 <div class="skill-card">Python</div>
 <div class="skill-card">Bash</div>
 <div class="skill-card">Cloudflare</div>
 <div class="skill-card">Datadog</div>
 <div class="skill-card">Dynatrace</div>
+<div class="skill-card">Power BI</div>
 
 </div>
-
-</div>
-
 </section>
 
 <section id="experience">
 
-<div class="container">
+<h2>Experience</h2>
 
-<h2 class="section-title">Work Experience</h2>
+<div class="timeline">
 
-<div class="exp-grid">
+<div class="timeline-item">
+<h3>EITB Global Info Solutions</h3>
+<span>Mar 2025 - Present</span>
 
-<div class="card">
-<h3>EITB Global Info Solutions Pvt Ltd</h3>
 <p>
-DevOps Engineer | Mar 2025 - Present
-<br><br>
-Managing Azure production infrastructure, CI/CD pipelines,
-Linux administration, Cloudflare, DNS, SSL/TLS,
-hosting platforms, backups, monitoring, and incident management.
+Managed Azure Production Environments,
+Azure Pipelines, DNS, SSL, Cloudflare,
+Hosting Platforms and Automation Solutions.
 </p>
 </div>
 
-<div class="card">
+<div class="timeline-item">
 <h3>Texiio Global Private Limited</h3>
-<p>
-DevOps Engineer | Oct 2022 - Mar 2025
-<br><br>
-Managed AWS & Azure infrastructure, Terraform deployments,
-Docker, Kubernetes, Jenkins pipelines, monitoring solutions,
-and cloud automation using Python and AWS Lambda.
-</p>
-</div>
+<span>Oct 2022 - Mar 2025</span>
 
+<p>
+Worked on AWS, Azure, Docker,
+Kubernetes, Terraform, Jenkins,
+Monitoring and Cost Optimization.
+</p>
 </div>
 
 </div>
@@ -372,54 +120,32 @@ and cloud automation using Python and AWS Lambda.
 
 <section id="projects">
 
-<div class="container">
+<h2>Featured Projects</h2>
 
-<h2 class="section-title">Projects</h2>
+<div class="project-grid">
 
-<div class="projects-grid">
-
-<div class="card">
-<h3>CI/CD Pipeline Automation</h3>
+<div class="project-card">
+<h3>Infrastructure Automation</h3>
 <p>
-Designed and implemented automated deployment pipelines using Jenkins and Azure DevOps.
+Provisioned AWS Infrastructure using Terraform
+with reusable modules.
 </p>
 </div>
 
-<div class="card">
-<h3>Kubernetes Deployment Platform</h3>
+<div class="project-card">
+<h3>Kubernetes Deployment</h3>
 <p>
-Managed production Kubernetes clusters with rolling updates and scaling.
+Containerized applications and deployed
+to Kubernetes clusters with rolling updates.
 </p>
 </div>
 
-<div class="card">
-<h3>Terraform Infrastructure</h3>
+<div class="project-card">
+<h3>Backup Automation</h3>
 <p>
-Provisioned cloud infrastructure using Infrastructure as Code principles.
+Developed Python scripts for automated
+website and database backups.
 </p>
-</div>
-
-<div class="card">
-<h3>Cloudflare & DNS Management</h3>
-<p>
-Managed DNS, SSL/TLS, CDN, and website security for production applications.
-</p>
-</div>
-
-<div class="card">
-<h3>AWS Lambda Automation</h3>
-<p>
-Automated EC2 scheduling and cloud operations using Python and AWS services.
-</p>
-</div>
-
-<div class="card">
-<h3>Monitoring & Incident Response</h3>
-<p>
-Implemented monitoring solutions using Datadog, Dynatrace, and CloudWatch.
-</p>
-</div>
-
 </div>
 
 </div>
@@ -428,43 +154,21 @@ Implemented monitoring solutions using Datadog, Dynatrace, and CloudWatch.
 
 <section id="certifications">
 
-<div class="container">
-
-<h2 class="section-title">Certifications</h2>
+<h2>Certifications</h2>
 
 <div class="cert-grid">
 
-<div class="card">
-<h3>AZ-400</h3>
-<p>Designing and Implementing Microsoft DevOps Solutions</p>
-</div>
+<div class="cert-card">AZ-400 DevOps Engineer</div>
 
-<div class="card">
-<h3>AZ-104</h3>
-<p>Microsoft Azure Administrator</p>
-</div>
+<div class="cert-card">AZ-104 Azure Administrator</div>
 
-<div class="card">
-<h3>Jenkins</h3>
-<p>KodeKloud Certification</p>
-</div>
+<div class="cert-card">Terraform Basics</div>
 
-<div class="card">
-<h3>Docker</h3>
-<p>Docker for Absolute Beginners</p>
-</div>
+<div class="cert-card">Docker Beginner</div>
 
-<div class="card">
-<h3>Terraform</h3>
-<p>Terraform Basics Training</p>
-</div>
+<div class="cert-card">Jenkins</div>
 
-<div class="card">
-<h3>Git & Shell Scripting</h3>
-<p>KodeKloud Training</p>
-</div>
-
-</div>
+<div class="cert-card">Shell Scripting</div>
 
 </div>
 
@@ -472,34 +176,31 @@ Implemented monitoring solutions using Datadog, Dynatrace, and CloudWatch.
 
 <section id="contact">
 
-<div class="container contact">
+<h2>Contact</h2>
 
-<h2 class="section-title">Contact Me</h2>
+<div class="contact-card">
 
-<p>📧 anushakn041@gmail.com</p>
-<p>📱 +91 7892270344</p>
-<p>📍 Chennai, India</p>
+<p>Email: anushakn041@gmail.com</p>
 
-<div class="social-icons">
+<p>Phone: +91 7892270344</p>
 
-<a href="https://www.linkedin.com/in/anusha-n02" target="_blank">
-<i class="fab fa-linkedin"></i>
+<p>Location: Chennai</p>
+
+<p>LinkedIn:
+<a href="https://linkedin.com/in/anusha-n02">
+linkedin.com/in/anusha-n02
 </a>
-
-<a href="https://github.com/Anushanarayanaswamy" target="_blank">
-<i class="fab fa-github"></i>
-</a>
-
-</div>
+</p>
 
 </div>
 
 </section>
 
 <footer>
-<p>© 2026 Anusha N | DevOps Engineer</p>
+<p>© 2026 Anusha | DevOps Engineer</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-```
